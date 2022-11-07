@@ -9,7 +9,7 @@ pipelines:
              - git fetch
              - git checkout 
              - git pull    
-             - git push sync 
+             - git push 
       dev1:
         - step:
            script:
