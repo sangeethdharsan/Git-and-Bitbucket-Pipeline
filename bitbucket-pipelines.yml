@@ -6,7 +6,7 @@ pipelines:
         - step:
            script:
              - git remote add sync https://github.com/sangeethdharsan/Git-and-Bitbucket-Pipeline.git
-             - git checkout dev
+             - git switch dev
              - git pull    
              - git push sync dev
       dev1:
