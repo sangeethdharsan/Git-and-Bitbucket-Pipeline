@@ -7,6 +7,7 @@ pipelines:
            script:
              - git remote add sync https://github.com/sangeethdharsan/Git-and-Bitbucket-Pipeline.git
              - git checkout dev
+             - git branch --set-upstream-to=origin/dev
              - git pull    
              - git push sync dev
       dev1:
