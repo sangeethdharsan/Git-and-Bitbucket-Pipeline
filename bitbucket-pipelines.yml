@@ -1,0 +1,11 @@
+image: atlassian/default-image:2
+
+pipelines:
+    branches:
+      Git-and-Bitbucket-Pipeline:
+        - step:
+           script:
+             - git remote add sync https://github.com/sangeethdharsan/Git-and-Bitbucket-Pipeline.git
+             - git checkout Git-and-Bitbucket-Pipeline
+             - git pull    
+             - git push sync Git-and-Bitbucket-Pipeline
