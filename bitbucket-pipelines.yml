@@ -5,7 +5,7 @@ pipelines:
       dev:
         - step:
            script:
-             - git remote add sync git@github.com:sangeethdharsan/Git-and-Bitbucket-Pipeline.git
+             - git remote add sync https://github.com/sangeethdharsan/Git-and-Bitbucket-Pipeline.git
              - git fetch
              - git checkout dev
              - git pull    
